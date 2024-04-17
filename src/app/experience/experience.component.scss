@@ -4,9 +4,45 @@
     padding: 16px; // Añade un relleno para separar el contenido del borde
   }
   
-  .experience-title {
-        margin: 32px;
-        font-size: 32px; // Tamaño del título
-        color: #333; // Color del texto
-  }
-  
+.experience-title {
+      margin: 32px;
+      font-size: 32px; // Tamaño del título
+      color: #333; // Color del texto
+}
+
+.card {
+      height: 400px; /* Altura fija para todos los contenedores de artículos */
+      margin-bottom: 24px; /* Margen inferior para separar los artículos */
+      border: none; /* Elimina el borde por defecto */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.card-img-top {
+      height: 300px; /* Ajusta la imagen para que ocupe todo el espacio disponible */
+      object-fit: cover; /* Mantiene la proporción de la imagen */
+      margin-top: 50px;
+      margin-left: 25px;
+      margin-right: 50px;
+}
+
+.card-body {
+      padding: 16px; /* Ajuste del relleno interno */
+      margin-top: 24px; /* Margen superior para separar el texto de la imagen */
+      margin-left: 50px;
+    }
+    
+    .card-title {
+      font-size: 24px; /* Tamaño del título del artículo */
+      color: #333; /* Color del texto del título */
+      margin-bottom: 16px; /* Margen inferior para separar del texto */
+    }
+    
+    .card-text {
+      font-size: 16px; /* Tamaño del texto del artículo */
+      color: #555; /* Color del texto del artículo */
+      line-height: 1.6; /* Aumenta el espaciado entre líneas */
+    }
+
+    .btn {
+      margin-top: 16px; /* Margen superior para separar del texto */
+    }
