@@ -1,0 +1,33 @@
+// Ajusta el margin general del componente
+.resume-container {
+    margin: 32px;
+    
+    // Agrega un background tenue con contraste sutil
+    background-color: rgba(255, 255, 255, 0.9);
+    
+    // Estilo de la imagen
+    img {
+      border-radius: 8px; // Bordes redondeados
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Sutil elevación
+      transition: transform 0.3s ease-in-out; // Transición suave en la transformación
+  
+      // Efecto de aumento al pasar el ratón
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  
+    // Estilo para el texto
+    h2, p {
+      color: #333; // Color del texto
+    }
+
+    .resume-title {
+        margin: 32px;
+        font-size: 32px; // Tamaño del título
+        color: #333; // Color del texto
+      }
+
+}
+
+  

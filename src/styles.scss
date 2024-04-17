@@ -1,0 +1,35 @@
+@use '@angular/material' as mat;
+
+// Definir la paleta de colores principal
+$educacion-en-accion-primary: mat.define-palette(mat.$deep-purple-palette);
+
+// Definir la paleta de colores de acento
+$educacion-en-accion-accent: mat.define-palette(mat.$amber-palette, A200, A100, A400);
+
+// Definir la paleta de colores de aviso (warning)
+$educacion-en-accion-warn: mat.define-palette(mat.$deep-orange-palette);
+
+// Crear el objeto de tema
+$educacion-en-accion-theme: mat.define-light-theme((
+  color: (
+    primary: $educacion-en-accion-primary,
+    accent: $educacion-en-accion-accent,
+    warn: $educacion-en-accion-warn,
+  )
+));
+
+// Incluir estilos de tema para componentes de Angular Material
+@include mat.all-component-themes($educacion-en-accion-theme);
+
+// Estilos personalizados para la barra de navegación de Bootstrap
+.navbar-custom {
+  background-color: #333; // Fondo oscuro
+  color: #fff; // Texto claro
+}
+
+// Otros estilos globales
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

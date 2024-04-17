@@ -1,0 +1,37 @@
+.home-container {
+  margin: 32px;
+}
+
+// Aplica un background tenue
+.home-container {
+  background-color: #f0f0f0; // Puedes ajustar el color según tu preferencia
+}
+
+// Estilos para el nombre
+h1 {
+  font-size: 2.5rem; // Ajusta el tamaño del nombre
+  color: #333; // Puedes ajustar el color según tu preferencia
+  margin: 16px;
+}
+
+// Estilos para la descripción
+p {
+  font-size: 1.2rem; // Ajusta el tamaño de la descripción
+  color: #555; // Puedes ajustar el color según tu preferencia
+  margin: 16px;
+}
+
+.carousel {
+  height: auto; // Ajusta la altura según tu preferencia
+  overflow: hidden;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}

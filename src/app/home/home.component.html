@@ -1,0 +1,33 @@
+<div class="row home-container">
+  <div class="col-md-6">
+    <!-- Izquierda: Nombre y Descripción -->
+    <h1>Juan Pablo Alegre</h1>
+    <p>Hola! </p>
+    <p>Gracias por dedicar un tiempo en conocerme. Me gustaría contarte que me dedico a programar, a enseñar y a emprender. 
+      Tengo 35 años y en todo el tiempo que transcurrió desde que salí de la educación formal obligatoria, me dediqué constantemente a aprender
+      nuevas habilidades, a encarar carreras de grado y posgrado (algunas finalizadas, otras no), a la enseñanza formal durante muchos años;
+      y siempre pero siempre, a emprender. Creo que todos tenemos una cualidad muy especial que parte de la creatividad y que es la creación de ideas y, partiendo de ella,
+      la innovación!
+      Me encanta seguir este camino... Aprender, idear, crear, trabajar y emprender!
+      Si compartís esta mirada, te invito a conocerme en profundidad. Y si no, te invito a conocerme y quizás te unás en mi ruta de innovación :) 
+    </p>
+  </div>
+  <div class="col-md-6">
+    <!-- Derecha: Carrousel de Imágenes -->
+    <div id="carouselExample" class="carousel slide mx-auto" data-bs-ride="carousel" style="width: 500px;">
+      <div class="carousel-inner">
+        <div class="carousel-item" *ngFor="let image of images; let i = index" [class.active]="i === currentImageIndex">
+          <img [src]="image" class="d-block w-100 img-fluid" alt="Imagen {{ i + 1 }}">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" (click)="prevImage">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" (click)="nextImage">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
